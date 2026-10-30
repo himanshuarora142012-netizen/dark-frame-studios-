@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dark Frame Studios | Creative Design</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #101010;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #b89143;
+}
+
+.logo {
+    color: #d8b46a;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #d8b46a;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: radial-gradient(circle, #292016, #080808 65%);
+}
+
+.hero h1 {
+    font-size: clamp(35px, 8vw, 65px);
+    color: #d8b46a;
+    letter-spacing: 4px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 20px auto;
+    color: #cccccc;
+}
+
+.btn {
+    display: inline-block;
+    background: #d8b46a;
+    color: #080808;
+    padding: 13px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.btn:hover {
+    background: white;
+}
+
+section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.section-title {
+    color: #d8b46a;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #aaa;
+    margin-bottom: 35px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #151515;
+    padding: 30px 20px;
+    border: 1px solid #34302a;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #d8b46a;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #bbb;
+}
+
+.price {
+    font-size: 25px;
+    color: #d8b46a;
+    margin: 15px;
+}
+
+.portfolio {
+    background: #101010;
+}
+
+.work {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #30251b, #111);
+    border: 1px solid #a78348;
+    border-radius: 8px;
+    color: #e4c17c;
+    font-weight: bold;
+}
+
+.order {
+    background: #151515;
+}
+
+.order form {
+    max-width: 550px;
+    margin: auto;
+    display: grid;
+    gap: 15px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 14px;
+    background: #080808;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    background: #d8b46a;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    color: #bbb;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #050505;
+    color: #888;
+    border-top: 1px solid #b89143;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">DARK FRAME STUDIOS</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Work</a>
+        <a href="#about">About</a>
+        <a href="#order">Order</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>DARK FRAME STUDIOS</h1>
+    <p>We turn ideas into visual experiences.
+    Premium custom designs, wallpapers and creative edits
+    made to leave an impression.</p>
+
+    <a href="#portfolio" class="btn">Explore Our Work</a>
+    <a href="#order" class="btn">Create Your Design</a>
+</section>
+
+<section id="services">
+    <h2 class="section-title">OUR SERVICES</h2>
+    <p class="subtitle">Creative work. Distinctive identity.</p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Custom DPs</h3>
+            <p>Personalised display pictures
+            with unique visual styles.</p>
+        </div>
+
+        <div class="card">
+            <h3>Wallpapers</h3>
+            <p>Custom mobile wallpapers
+            designed around your ideas.</p>
+        </div>
+
+        <div class="card">
+            <h3>Business Designs</h3>
+            <p>Creative profile designs
+            for brands and businesses.</p>
+        </div>
+
+        <div class="card">
+            <h3>Creative Edits</h3>
+            <p>Cinematic, anime, sports
+            and aesthetic edits.</p>
+        </div>
+    </div>
+</section>
+
+<section class="portfolio" id="portfolio">
+    <h2 class="section-title">OUR CREATIONS</h2>
+    <p class="subtitle">A glimpse into our creative world.</p>
+
+    <div class="cards">
+        <div class="work">ANIME DESIGNS</div>
+        <div class="work">SPORTS EDITS</div>
+        <div class="work">BUSINESS DPs</div>
+        <div class="work">CUSTOM WALLPAPERS</div>
+    </div>
+    <p style="color:#888; margin-top:20px;">
+        Portfolio previews — original project images can be added here.
+    </p>
+</section>
+
+<section>
+    <h2 class="section-title">OUR PRICING</h2>
+    <p class="subtitle">Starting prices. Final cost depends on the design.</p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Custom DP</h3>
+            <div class="price">₹29+</div>
+            <p>Personalised profile design.</p>
+        </div>
+
+        <div class="card">
+            <h3>Wallpaper</h3>
+            <div class="price">₹49+</div>
+            <p>Custom mobile wallpaper.</p>
+        </div>
+
+        <div class="card">
+            <h3>Business DP</h3>
+            <div class="price">₹69+</div>
+            <p>Creative business profile design.</p>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title">ABOUT US</h2>
+    <p>
+        Dark Frame Studios is a creative design studio
+        built around imagination, originality and visual storytelling.
+        Our goal is to transform simple ideas into memorable designs.
+    </p>
+</section>
+
+<section class="order" id="order">
+    <h2 class="section-title">REQUEST A DESIGN</h2>
+    <p class="subtitle">Tell us what you have in mind.</p>
+
+    <form id="orderForm">
+        <input type="text" placeholder="Your name" required>
+
+        <input type="email" placeholder="Your email" required>
+
+        <select required>
+            <option value="">Choose a service</option>
+            <option>Custom DP</option>
+            <option>Wallpaper</option>
+            <option>Business DP</option>
+            <option>Creative Edit</option>
+        </select>
+
+        <textarea placeholder="Describe your design idea..."
+        required></textarea>
+
+        <button type="submit">Submit Request</button>
+    </form>
+
+    <p id="message" style="color:#d8b46a; margin-top:15px;"></p>
+</section>
+
+<footer>
+    <p>© 2026 Dark Frame Studios. All rights reserved.</p>
+    <p>CREATE. DESIGN. INSPIRE.</p>
+</footer>
+
+<script>
+document.getElementById("orderForm").addEventListener(
+    "submit", function(event) {
+        event.preventDefault();
+
+        document.getElementById("message").textContent =
+        "Thank you! This is a demo form. Your request has not been sent.";
+    }
+);
+</script>
+
+</body>
+</html>
